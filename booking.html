@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/doctor.svg">
+	<title>Dundurn Medical Centre</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/alex.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fontawesome.js"></script>
+</head>
+
+<body>
+
+	<nav class="shadow stroke navbar navbar-expand-sm bg-light navbar-light fixed-top" id="header">
+		<!-- Brand/logo -->
+		<a class="navbar-brand" href="index.html">
+			<img src="assets/doctor.svg" alt="logo" width=18vw>
+		</a>
+
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<div class="display-10">Dundurn Medical Centre Inc.</div>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="row" id="booking" style="padding-top: 5vw;">
+		<div class="shadow container-lg p-3 my-3 border bg-custombg2 text-white" data-aos="fade-up">
+			<div class="display-4" style="padding-left: 3vw;">Book an appointment</div>
+
+			<div class="container-lg p-3 my-3">
+
+				<form class="needs-validation" novalidate id="form" method="POST" autocomplete="on" action="book.php">
+					<div class="display-5">About you</div>
+
+					<div class="display-7">I am a new patient *</div>
+					<div class="form-row">
+						<div class="form-group col-lg-12">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio1"
+									required value="Yes">
+								<label class="form-check-label display-8" for="inlineRadio1">Yes</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio2"
+									required value="No">
+								<label class="form-check-label display-8" for="inlineRadio2">No</label>
+							</div>
+							<input type="radio" name="new" style="display:none;" required>
+							<div class="invalid-feedback">Please choose an option.</div>
+						</div>
+					</div>
+
+					<div class="display-7">Is the patient a child? (under 18) *</div>
+					<div class="form-row">
+						<div class="form-group col-lg-12">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio3"
+									required value="Yes">
+								<label class="form-check-label display-8" for="inlineRadio3">Yes</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio4"
+									required value="No">
+								<label class="form-check-label display-8" for="inlineRadio4">No</label>
+							</div>
+							<input type="radio" name="child" style="display:none;" required>
+							<div class="invalid-feedback">Please choose an option.</div>
+						</div>
+
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-lg-6">
+							<label for="fname" class="display-7">First name *</label>
+							<input type="text" name="fname" class="form-control" placeholder="Your first name"
+								id="fname" required>
+							<div class="invalid-feedback">Please enter your first name.</div>
+						</div>
+
+						<div class="form-group col-lg-6">
+							<label for="lname" class="display-7">Last name *</label>
+							<input type="text" name="lname" class="form-control" placeholder="Your last name" id="lname"
+								required>
+							<div class="invalid-feedback">Please enter your last name.</div>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-lg-6">
+							<label for="phone" class="display-7">Phone number *</label>
+							<input type="tel" name="phone" pattern='^\+?\d{0,13}' class="form-control"
+								placeholder="Your phone number" id="phone" required>
+							<div class="invalid-feedback">Please enter a valid phone number.</div>
+						</div>
+
+						<div class="form-group col-lg-6">
+							<label for="email" class="display-7">Email address *</label>
+							<input type="email" name="email" class="form-control" placeholder="Your email address"
+								id="email" required>
+							<div class="invalid-feedback">Please enter a valid email address.</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="FormControlTextarea1" class="display-7">Additional Information</label>
+						<textarea name="you-add" class="form-control" id="FormControlTextarea1" rows="3"
+							placeholder="Any additional information you think would be needed"></textarea>
+					</div>
+
+					<div class="display-5">About your appointment</div>
+
+					<div class="display-7">Reason for visit *</div>
+					<div class="form-row">
+						<div class="form-group col-lg-12">
+							<select class="form-control custom-select" name="reason" required>
+								<option value="">Choose an option</option>
+								<option value="Abrasions / Bruises / Cut">Abrasions / Bruises / Cut</option>
+								<option value="Allergies / Itchy Eyes">Allergies / Itchy Eyes</option>
+								<option value="Anxiety / Depression">Anxiety / Depression</option>
+								<option value="Acne / Skin Rash">Acne / Skin Rash</option>
+								<option value="Muscle and Body Aches">Muscle and Body Aches</option>
+								<option value="Cold / Flu / Cough">Cold / Flu / Cough</option>
+								<option value="Stomach / Vomiting / Diarrhea">Stomach / Vomiting / Diarrhea</option>
+								<option value="Headaches / Migraines">Headaches / Migraines</option>
+								<option value="Medication Refills">Medication Refills</option>
+								<option value="Pink Eye">Pink Eye</option>
+								<option value="STI">STI</option>
+								<option value="UTI">UTI</option>
+								<option value="Other reason">Other reason</option>
+							</select>
+							<div class="invalid-feedback">Please choose an option.</div>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-lg-12">
+							<label for="FormControlTextarea2" class="display-7">Additional Information</label>
+							<textarea name="app-add" class="form-control" id="FormControlTextarea2" rows="3"
+								placeholder="Any additional information you think would be needed"></textarea>
+						</div>
+					</div>
+
+					<div class="display-5">Pharmacy details</div>
+
+					<div class="display-7">Where do you want your prescription? *</div>
+					<div class="form-row">
+						<div class="form-group col-lg-12">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="radioOptions3" id="Radios1" required
+									value="Delivery within 24 hours">
+								<label class="form-check-label display-8" for="Radios1">Delivery within 24 hours</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="radioOptions3" id="Radios2" required
+									value="Forwarded to preferred pharmacy">
+								<label class="form-check-label display-8" for="Radios2">Forwarded to preferred
+									pharmacy</label>
+								<div class="invalid-feedback">Please choose an option.</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="address">
+						<div class="form-row">
+							<div class="form-group col-lg-12">
+								<label for="inputAddress1" class="display-7">Your full address *</label>
+								<textarea name="address" class="form-control" id="inputAddress1" rows="3"
+									placeholder="Your address"></textarea>
+								<div class="invalid-feedback">Please enter your address.</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="pharmacy">
+						<div class="form-row">
+							<div class="form-group col-lg-12">
+								<label for="inputPharmacy" class="display-7">Preferred Pharmacy *</label>
+								<input type="text" name="pharmacy" class="form-control"
+									placeholder="Pharmacy of preference" id="inputPharmacy">
+								<div class="invalid-feedback">Please enter your preferred pharmacy.</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-lg-6">
+								<label for="inputPhone2" class="display-7">Phone number *</label>
+								<input type="tel" name="pharm-number" pattern='^\+?\d{0,13}' class="form-control"
+									placeholder="Phone number" id="inputPhone2">
+								<div class="invalid-feedback">Please enter a valid phone number.</div>
+							</div>
+
+							<div class="form-group col-lg-6">
+								<label for="inputFax" class="display-7">Fax Number</label>
+								<input type="tel" name="pharm-fax-number" pattern='^\+?\d{0,13}' class="form-control"
+									placeholder="Fax Number" id="inputFax">
+								<div class="invalid-feedback">Please enter a valid phone number.</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-lg-12">
+								<label for="inputAddress" class="display-7">Full address</label>
+								<textarea class="form-control" name="pharm-address" id="inputAddress" rows="3"
+									placeholder="Pharmacy of preference address"></textarea>
+								<div class="invalid-feedback">Please enter the address.</div>
+							</div>
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-custom">Send my appointment request</button>
+
+					<div id="space"></div>
+					<div id="messages" class="hide" role="alert">
+						<div id="messages_content"></div>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 contact">
+			<div class="container-lg p-3 my-3">
+				<div class="row justify-content-md-center">
+					<div class="col-lg-1">
+						<a class="nav-link" href="mailto:sayon.mk@gmail.com" target="_blank" class="right">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="col-lg-1">
+						<a class="nav-link" href="tel:9055294040" class="right">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="col-lg-1">
+						<a class="nav-link" href="tel:9055294494" class="right">
+							<i class="fa fa-fax" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="col-lg-1">
+						<a class="nav-link" href="https://goo.gl/maps/g9mbkMpzp9PYZpiV9" target="_blank" class="right">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="col-lg-1">
+						<a class="nav-link" href="" target="_blank">
+							<i class="fa fa-globe" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="col-lg-1">
+						<a class="nav-link" href="" target="_blank" class="right">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="row justify-content-md-center" style="margin-top: 2vw;">
+					<div class="display-11">Dundurn &copy; 2021 All Rights Reserved</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/dundurn.js"></script>
+	<script src="js/aos.js"></script>
+</body>
+
+</html>

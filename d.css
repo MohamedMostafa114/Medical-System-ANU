@@ -1,0 +1,170 @@
+/* General Reset and Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1865e1;
+    /* Purple color */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #ffcc00;
+    /* Golden accent */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Login/Signup Form */
+section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.signup,
+.login {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    /* Move the form down a little */
+}
+
+h1.heading {
+    font-size: 30px;
+    color: #1865e1;
+    margin-bottom: 40px;
+    /* Create more space between heading and form */
+    font-weight: bold;
+}
+
+/* Form Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #1865e1;
+    /* Purple border when focused */
+}
+
+input[type="submit"] {
+    background-color: #1865e1;
+    /* Purple button */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1865e1;
+    /* Darker purple on hover */
+}
+
+/* Links */
+p a {
+    text-decoration: none;
+    color: #1865e1;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #ffcc00;
+}
+
+/* Move the form-container 100px down */
+.form-container {
+    margin-top: 100px;
+    /* Adjust form position */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .signup,
+    .login {
+        padding: 20px;
+        width: 90%;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+}
