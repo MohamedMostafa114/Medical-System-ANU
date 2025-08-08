@@ -4,9 +4,6 @@
 > Medical System — project for Alexandria National University (ANU)  
 > Short: a web-based system to manage patients, appointments, medical records, and clinic workflows.
 
-> Medical System — project for Alexandria National University (ANU)  
-> Short: a web-based system to manage patients, appointments, medical records, and clinic workflows.
-
 ## Table of Contents
 - [About](#about)
 - [Features](#features)
