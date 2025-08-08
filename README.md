@@ -1,6 +1,4 @@
 # Medical-System-ANU
-
-![ANU Medical Centre Banner](a5167a91-7919-40a9-93c0-003a7e01362f.png)
 <img width="943" height="411" alt="Screenshot 2025-08-08 170944" src="https://github.com/user-attachments/assets/27558257-7343-479a-9266-5db19d27d2e6" />
 
 > Medical System — project for Alexandria National University (ANU)  
