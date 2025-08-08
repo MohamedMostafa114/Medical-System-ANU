@@ -52,7 +52,8 @@ This repo contains the backend and (optionally) frontend code for the system.
 
 ## Screenshots
 > <img width="937" height="406" alt="image" src="https://github.com/user-attachments/assets/baa5f835-7963-48cf-8179-282f75f96a4f"
-    /><img width="944" height="407" alt="image" src="https://github.com/user-attachments/assets/ffce4b13-7063-42cf-a58d-ddafa518d16c" />
+    /><img width="944" height="407" alt="image" src="https://github.com/user-attachments/assets/ffce4b13-7063-42cf-a58d-ddafa518d16c" /><img width="932" height="436" alt="image" src="https://github.com/user-attachments/assets/dc913abb-d05e-4aeb-8aed-46aa4ac582aa" /><img width="923" height="427" alt="image" src="https://github.com/user-attachments/assets/34e5dfd5-9b62-454a-b34d-739ce1b0e849" />
+
 
 
     
