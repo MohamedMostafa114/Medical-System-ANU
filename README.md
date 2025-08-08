@@ -1,5 +1,10 @@
 # Medical-System-ANU
-![ANU Medical Centre Banner](assets/anu-medical-banner.png)
+
+![ANU Medical Centre Banner](a5167a91-7919-40a9-93c0-003a7e01362f.png)
+
+> Medical System — project for Alexandria National University (ANU)  
+> Short: a web-based system to manage patients, appointments, medical records, and clinic workflows.
+
 > Medical System — project for Alexandria National University (ANU)  
 > Short: a web-based system to manage patients, appointments, medical records, and clinic workflows.
 
