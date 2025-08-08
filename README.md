@@ -53,6 +53,11 @@ This repo contains the backend and (optionally) frontend code for the system.
 
 ---
 
-## Demo / Screenshots
-> Add screenshots or a demo GIF here.
+## Screenshots
+> <img width="937" height="406" alt="image" src="https://github.com/user-attachments/assets/baa5f835-7963-48cf-8179-282f75f96a4f"
+    /><img width="944" height="407" alt="image" src="https://github.com/user-attachments/assets/ffce4b13-7063-42cf-a58d-ddafa518d16c" /><img width="574" height="453" alt="image" src="https://github.com/user-attachments/assets/5884ce7b-5ef9-4a36-91a7-9b60280d67e2" />
+
+
+    
+
 
