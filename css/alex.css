@@ -1,0 +1,168 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4vw;
+}
+
+li {
+  font-size: 1.3vw;
+}
+
+.btn-custom {
+  font-size: 1.5vw;
+}
+
+a img {
+  height: 1.7vw;
+  margin-top: 0.4vw;
+}
+
+.appear {
+  top: -7vw;
+  opacity: 0;
+}
+
+.fa {
+  font-size: 5vw !important;
+}
+
+.fa-phone {
+  color: white;
+}
+
+.fa-phone:hover {
+  color: #1865e1;
+}
+
+.fa-fax {
+  color: white;
+}
+
+.fa-fax:hover {
+  color: #1865e1;
+}
+
+.fa-map-marker {
+  color: white;
+}
+
+.fa-map-marker:hover {
+  color: #1865e1;
+}
+
+.fa-globe {
+  color: white;
+}
+
+.fa-globe:hover {
+  color: #1865e1;
+}
+
+.fa-envelope-o {
+  color: white;
+}
+
+.fa-envelope-o:hover {
+  color: #1865e1;
+}
+
+.fa-facebook-square {
+  color: white;
+}
+
+.fa-facebook-square:hover {
+  color: #1865e1;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 70%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.today {
+  background-color: white;
+  color: #1865e1;
+}
+
+.today .open img {
+  height: 2vw;
+}
+
+.card {
+  width: 22.5vw;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75.1%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: #000;
+}
+
+.card:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-size: 1.5vw;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  text-align: left;
+}
+
+/* NAVIGATION */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #1865e1;
+  height: 0.15vw;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.active1 {
+  color: #1865e1 !important;
+}
+
+.contact {
+  background-color: #e8eaed;
+}
